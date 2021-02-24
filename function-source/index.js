@@ -28,10 +28,10 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
  // Establishing connection to database   
  function connectToDatabase(){
     const connection = mysql.createConnection({
-      host     : 'remotemysql.com',
-      user     : 'whslJRgtK3',
-      password : 'gij5T1X18Z',
-      database : 'whslJRgtK3'
+      host     : '',
+      user     : '',
+      password : '',
+      database : ''
     });
     return new Promise((resolve,reject) => {
        connection.connect();
